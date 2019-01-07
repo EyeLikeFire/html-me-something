@@ -1,0 +1,88 @@
+/*
+Use margin and padding to space your elements in a visually pleasing way.
+Use at least one of each of the following types of selectors: element, class, id.
+Don't break these rules:
+
+    At all costs, avoid adding HTML elements in order to achieve a specific visual effect.
+    Use document-level and inline styles sparingly, and only when absolutely necessary.
+
+As before, be creative! Make your page look great, and don't settle for checking off the 
+items above. Have a look at CSS Zen Garden for inspiration (use your browser's developer
+tools to see how those pages' styles are built)
+*/
+
+body {
+    /*color: rgb(51, 204, 204);*/
+    color: rgb(38, 38, 38);
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    font-size: 1.5rem
+}
+
+section {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10% 0 10%;
+}
+
+footer {
+    text-align: right;
+}
+img {
+    max-width: 100%;
+    margin-bottom: 2em;
+    box-shadow: 0px 10px 200px rgb(224, 224, 224);
+    animation: fade 4s;
+}
+
+a {
+    text-decoration: none;
+}
+
+b {
+    color: rgb(48, 110, 110);
+}
+
+u {
+    color: rgb(146, 97, 33);
+}
+.headings {
+    font-family: 'Lobster Two', cursive;
+    padding-left: 10%;
+    color: rgb(48, 110, 110);
+    font-size: 3em;
+    animation: slide 1s;
+}
+
+.title {
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+    color: rgb(11, 87, 87);
+    font-size: 5em;
+
+    padding: 50px;
+    box-shadow: 0px 0px 200px rgb(224, 224, 224);
+}
+
+@keyframes slide {
+0%     {padding-left: 0%;}
+100%   {padding-left: 10%;}
+}
+
+@keyframes fade {
+0%   {opacity: 0.0; filter:blur(10px); box-shadow: 0px 0px 0px white;}
+100% {opacity: 1.0; filter:blur(0); box-shadow: 0px 10px 200px rgb(224, 224, 224); }
+}
+
+
+.just {
+    text-align: justify;
+}
+
+#copyright {
+    color: white;
+    font-weight: bold;
+    text-shadow:0 1px 6px rgb(146, 146, 146);
+    padding: 25px; /* <-- There is the padding :) */
+    font-size: 1.5em;
+}
